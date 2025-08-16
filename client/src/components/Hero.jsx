@@ -47,7 +47,7 @@ const Hero = () => {
   return (
     <>
       <section className="p-6 max-w-2xl mx-auto bg-white rounded-lg shadow mt-6">
-        <h2 className="text-2xl font-semibold mb-3 text-gray-800">
+        <h2 className="text-mg font-semibold mb-3 text-gray-800">
           Share Your Text
         </h2>
         <p className="text-gray-600 mb-4">
