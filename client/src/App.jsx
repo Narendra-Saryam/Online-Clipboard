@@ -8,8 +8,10 @@ function App() {
   return (
     <>
       <Navbar />
-      <Hero />
-      <FileShare />
+      <div className='flex md:flex-row sm:flex-col flex-col mt-4 md:mt-14 gap-5 md:gap-10'>
+        <Hero />
+        <FileShare />
+      </div>
       <Retrieve />
     </>
   )

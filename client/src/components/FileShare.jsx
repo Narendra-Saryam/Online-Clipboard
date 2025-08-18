@@ -51,26 +51,28 @@ const FileShare = () => {
 
   return (
     <>
-      <section className="p-6 max-w-2xl mx-auto bg-white rounded-lg shadow mt-6">
-        <h2 className="text-2xl font-semibold mb-3 text-gray-800">
-          Share Your Files
+      <section className="p-6 md:min-w-2xl sm:min-w-2xl mx-auto bg-white rounded-lg shadow mt-6">
+        <h2 className="text-3xl font-semibold mb-3 text-gray-800">
+          Share Files :
         </h2>
         <p className="text-gray-600 mb-4">
           Click to upload or drag and drop your file. <br />
-          Supported: Images (JPG, PNG, GIF), Videos (MP4, AVI, MOV),
-          Audio (MP3, WAV), Documents (PDF, DOC, TXT).
+          <p className="text-sm text-gray-500 mt-2">
+            Supported: Images (JPG, PNG, GIF), Videos (MP4, AVI, MOV),
+            Audio (MP3, WAV), Documents (PDF, DOC, TXT).
+          </p>
         </p>
         <input
           type="file"
           onChange={handleFileChange}
-          className="block w-full text-gray-600 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 focus:outline-none"
+          className="block w-full p-1 text-gray-600 border-[0.5px] rounded-lg cursor-pointer focus:outline-none"
         />
         {file && (
           <p className="mt-2 text-sm text-gray-500">Selected: {file.name}</p>
         )}
         <button
           onClick={uploadFile}
-          className="mt-4 px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded"
+          className="mt-4 px-4 py-2 bg-green-600 hover:opacity-100 opacity-85 rounded"
         >
           Share File
         </button>

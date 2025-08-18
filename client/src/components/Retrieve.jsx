@@ -49,13 +49,13 @@ const Retrieve = () => {
           placeholder="Enter code..."
           value={code}
           onChange={(e) => setCode(e.target.value)}
-          className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full p-3 border-[0.5px] rounded focus:outline-none"
         />
         
         <button
           onClick={retrieveContent}
           disabled={loading}
-          className="w-full px-4 py-2 bg-purple-600 hover:bg-purple-700 disabled:bg-gray-400 text-white rounded transition-colors"
+          className="w-full px-4 py-2 bg-green-600 hover:opacity-100 opacity-85 disabled:bg-gray-400 rounded transition-colors"
         >
           {loading ? "Retrieving..." : "Retrieve"}
         </button>
@@ -82,7 +82,7 @@ const Retrieve = () => {
                 </div>
                 <button
                   onClick={() => navigator.clipboard.writeText(retrievedContent.content)}
-                  className="px-3 py-1 bg-blue-600 hover:bg-blue-700 text-white text-sm rounded"
+                  className="px-3 py-1 bg-green-600 hover:opacity-100 opacity-85 text-sm rounded"
                 >
                   Copy to Clipboard
                 </button>
@@ -96,13 +96,13 @@ const Retrieve = () => {
                 <div className="space-x-2">
                   <button
                     onClick={() => window.open(`${API_BASE_URL}${retrievedContent.url}`, "_blank")}
-                    className="px-3 py-1 bg-green-600 hover:bg-green-700 text-white text-sm rounded"
+                    className="px-3 py-1 bg-green-600 hover:opacity-100 opacity-85 text-sm rounded"
                   >
                     Download File
                   </button>
                   <button
                     onClick={() => window.open(`${API_BASE_URL}${retrievedContent.url}`, "_blank")}
-                    className="px-3 py-1 bg-purple-600 hover:bg-purple-700 text-white text-sm rounded"
+                    className="px-3 py-1 bg-green-600 hover:opacity-100 opacity-85 text-sm rounded"
                   >
                     View File
                   </button>

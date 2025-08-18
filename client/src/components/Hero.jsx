@@ -46,15 +46,15 @@ const Hero = () => {
 
   return (
     <>
-      <section className="p-6 max-w-2xl mx-auto bg-white rounded-lg shadow mt-6">
+      <section className="p-6 md:min-w-3xl sm:min-w-3xl mx-auto bg-white rounded-lg shadow mt-6">
         <h2 className="text-3xl font-semibold mb-3 text-gray-800">
-          Share Your Text
+          Share Text :
         </h2>
         <p className="text-gray-600 mb-4">
           Enter your text below to get a sharing code.
         </p>
         <textarea
-          className="w-full h-32 p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full min-h-32 max-h-32 p-3 border border-gray-300 rounded focus:outline-none focus:ring-[0.5px] focus:ring-black"
           placeholder="Paste or type here..."
           value={text}
           onChange={(e) => setText(e.target.value)}
@@ -62,13 +62,13 @@ const Hero = () => {
         <div className="mt-4 flex gap-4">
           <button
             onClick={resetText}
-            className="px-4 py-2 bg-gray-300 hover:bg-gray-400 rounded"
+            className="px-4 py-2 bg-gray-500 text-white hover:opacity-100 opacity-85 rounded"
           >
             Reset
           </button>
           <button
             onClick={shareText}
-            className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded"
+            className="px-4 py-2 bg-green-600 hover:opacity-100 opacity-85 rounded"
           >
             Share Text
           </button>
