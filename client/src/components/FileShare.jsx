@@ -72,7 +72,7 @@ const FileShare = () => {
         )}
         <button
           onClick={uploadFile}
-          className="mt-4 px-4 py-2 bg-green-600 hover:opacity-100 opacity-85 rounded"
+          className="mt-4 px-4 py-2 bg-green-400 hover:opacity-100 opacity-85 rounded"
         >
           Share File
         </button>

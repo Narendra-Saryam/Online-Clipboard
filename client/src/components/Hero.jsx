@@ -8,7 +8,16 @@ const Hero = () => {
   const [shareCode, setShareCode] = useState("");
 
   const resetText = () => setText("");
-  
+
+  const pasteFromClipboard = async () => {
+    try {
+      const clipboardText = await navigator.clipboard.readText();
+      setText(clipboardText);
+    } catch (err) {
+      alert("Failed to read clipboard!");
+    }
+  };
+
   const shareText = async () => {
     if (!text.trim()) {
       alert("Please enter some text to share!");
@@ -67,8 +76,15 @@ const Hero = () => {
             Reset
           </button>
           <button
+            onClick={pasteFromClipboard}
+            className="px-4 py-2 bg-green-500 text-white hover:opacity-100 opacity-85 rounded"
+            title="Paste clipboard text"
+          >
+            Paste
+          </button>
+          <button
             onClick={shareText}
-            className="px-4 py-2 bg-green-600 hover:opacity-100 opacity-85 rounded"
+            className="px-4 py-2 bg-green-400 hover:opacity-100 opacity-85 rounded"
           >
             Share Text
           </button>

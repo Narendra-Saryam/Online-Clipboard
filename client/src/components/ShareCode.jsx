@@ -26,7 +26,7 @@ const ShareCode = ({ shareCode, onClose, type }) => {
         </div>
         
         <div className="bg-gray-100 rounded-lg p-6 mb-6">
-          <div className="text-4xl font-bold text-green-600 tracking-wider mb-2">
+          <div className="text-4xl font-bold text-green-400 tracking-wider mb-2">
             {shareCode}
           </div>
           <p className="text-sm text-gray-500">
@@ -37,7 +37,7 @@ const ShareCode = ({ shareCode, onClose, type }) => {
         <div className="flex gap-3">
           <button
             onClick={copyToClipboard}
-            className="flex-1 px-4 py-3 bg-green-600 hover:opacity-100 opacity-85 rounded-lg font-medium transition-colors"
+            className="flex-1 px-4 py-3 bg-green-400 hover:opacity-100 opacity-85 rounded-lg font-medium transition-colors"
           >
             {copied ? 'Copied!' : 'Copy Code'}
           </button>
