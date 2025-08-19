@@ -14,5 +14,45 @@
     "type": "text",
     "content": "6498",
     "id": "2"
+  },
+  {
+    "created_at": "2025-08-19 09:04:09.737480",
+    "expiry": "2025-08-19 10:04:09.737480",
+    "share_code": "2849",
+    "type": "text",
+    "content": "An online clipboard is a digital tool or service that allows users to temporarily store, copy, and transfer text, images, or data across different devices via the internet. Unlike a traditional clipboard, which is a feature built into operating systems for short-term data storage during cut, copy, and paste operations within or across applications on the same device, an online clipboard stores the copied content in the cloud, making it accessible anywhere with internet access.\r\n\r\n",
+    "id": "3"
+  },
+  {
+    "created_at": "2025-08-19 09:05:03.017937",
+    "expiry": "2025-08-19 10:05:03.017937",
+    "share_code": "0567",
+    "type": "text",
+    "content": "An online clipboard is a digital tool or service that allows users to temporarily store, copy, and transfer text, images, or data across different devices via the internet. Unlike a traditional clipboard, which is a feature built into operating systems for short-term data storage during cut, copy, and paste operations within or across applications on the same device, an online clipboard stores the copied content in the cloud, making it accessible anywhere with internet access.\r\n\r\n",
+    "id": "4"
+  },
+  {
+    "created_at": "2025-08-19 09:11:44.867344",
+    "expiry": "2025-08-19 10:11:44.867344",
+    "share_code": "5986",
+    "type": "text",
+    "content": "An online clipboard is a digital tool or service that allows users to temporarily store, copy, and transfer text, images, or data across different devices via the internet. Unlike a traditional clipboard, which is a feature built into operating systems for short-term data storage during cut, copy, and paste operations within or across applications on the same device, an online clipboard stores the copied content in the cloud, making it accessible anywhere with internet access.\r\n\r\nKey Features of an Online Clipboard:\r\nCross-device synchronization: You can copy data on one device (like a phone or computer) and paste it on another without needing direct device-to-device connection.\r\n\r\nData type flexibility: Supports various data types including text, images, and sometimes files.\r\n\r\nSecure access: Typically, each clipboard session or stored data is accessed via unique links or handles, ensuring privacy and controlled access.\r\n\r\nTemporary storage: Data on an online clipboard is often stored temporarily and may be automatically cleared after a set period (e.g., 24 hours) to protect privacy.\r\n\r\nHow It Works:\r\nUsers paste or input data into the online clipboard through a web interface.\r\n\r\nThe data is stored on a server and associated with a unique identifier (a URL or QR code).\r\n\r\nUsers access the stored data from another device by visiting the URL or scanning the QR code.\r\n\r\nData can be copied from the online clipboard and pasted into applications on the receiving device.\r\n\r\nBenefits:\r\nUseful for quickly sharing data between devices without cables or physical media.\r\n\r\nCan facilitate collaboration or data transfer when devices are not in close proximity.\r\n\r\nSimplifies transferring clipboard content beyond device limits.\r\n\r\nExamples and Use Cases:\r\nTools like Klipit and copy-paste.online provide services where users can create an online clipboard, share the link, and retrieve data anywhere.\r\n\r\nIntegration in web applications via Clipboard APIs enables transferring clipboard content securely and programmatically, often requiring secure contexts (HTTPS) and permission models.\r\n\r\nSecurity Considerations:\r\nSince data is stored online, there is a risk of unauthorized access if unique links are exposed.\r\n\r\nData is usually cleared periodically to reduce the risk of leakage.\r\n\r\nUsers are advised to avoid storing highly sensitive information on online clipboards unless the service provides strong encryption and security measures.",
+    "id": "5"
+  },
+  {
+    "created_at": "2025-08-19 09:14:42.098555",
+    "expiry": "2025-08-19 10:14:42.098555",
+    "share_code": "5302",
+    "type": "text",
+    "content": "5986",
+    "id": "6"
+  },
+  {
+    "created_at": "2025-08-19 09:21:54.599215",
+    "expiry": "2025-08-19 10:21:54.599215",
+    "share_code": "6708",
+    "type": "file",
+    "filename": "n1nobg.png",
+    "id": "7"
   }
 ]

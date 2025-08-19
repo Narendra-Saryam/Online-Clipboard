@@ -71,20 +71,20 @@ const Hero = () => {
         <div className="mt-4 flex gap-4">
           <button
             onClick={resetText}
-            className="px-4 py-2 bg-gray-500 text-white hover:opacity-100 opacity-85 rounded"
+            className="px-4 py-1 md:py-1.5 bg-gray-500 text-white hover:opacity-100 opacity-85 rounded"
           >
             Reset
           </button>
           <button
             onClick={pasteFromClipboard}
-            className="px-4 py-2 bg-green-500 text-white hover:opacity-100 opacity-85 rounded"
+            className="px-4 py-1 md:py-1.5 bg-green-500 text-white hover:opacity-100 opacity-85 rounded"
             title="Paste clipboard text"
           >
             Paste
           </button>
           <button
             onClick={shareText}
-            className="px-4 py-2 bg-green-400 hover:opacity-100 opacity-85 rounded"
+            className="px-4 py-1 md:py-1.5 bg-green-400 hover:opacity-100 opacity-85 rounded"
           >
             Share Text
           </button>

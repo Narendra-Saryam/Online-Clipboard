@@ -62,16 +62,16 @@ const Retrieve = () => {
           <div className="flex gap-4">
             <button
               onClick={pasteFromClipboard}
-              className="w-full px-4 py-2 bg-green-500 text-white hover:opacity-100 opacity-85 rounded transition-colors mb-2"
+              className="w-full px-4 py-1 md:py-2 bg-green-500 text-white hover:opacity-100 opacity-85 rounded transition-colors mb-2"
               title="Paste clipboard text"
               disabled={loading}
             >
-              Paste from Clipboard
+              Paste
             </button>
             <button
               onClick={retrieveContent}
               disabled={loading}
-              className="w-full px-4 py-2 bg-green-400 hover:opacity-100 opacity-85 rounded transition-colors mb-2"
+              className="w-full px-4 py-1 md:py-2 bg-green-400 hover:opacity-100 opacity-85 rounded transition-colors mb-2"
             >
               {loading ? "Retrieving..." : "Retrieve"}
             </button>
@@ -96,9 +96,11 @@ const Retrieve = () => {
               {retrievedContent.type === "text" ? (
                 <div className="space-y-3">
                   <p className="text-sm text-gray-600">Type: Text</p>
-                  <div className="p-3 bg-white border rounded">
-                    <p className="text-gray-800 whitespace-pre-wrap">{retrievedContent.content}</p>
-                  </div>
+                  <textarea
+                    className="w-full max-h-50 p-3 border border-gray-300 rounded focus:outline-none focus:ring-[0.5px] focus:ring-black"
+                    value={retrievedContent.content}
+                    readOnly
+                  />
                   <button
                     onClick={() => navigator.clipboard.writeText(retrievedContent.content)}
                     className="px-3 py-1 bg-green-400 hover:opacity-100 opacity-85 text-sm rounded"
